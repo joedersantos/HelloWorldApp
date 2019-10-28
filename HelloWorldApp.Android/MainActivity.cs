@@ -37,8 +37,7 @@ namespace HelloWorldApp.Droid
 
             AppCenter.Start("f3d2e951-3692-4703-94b8-91ba96a0e461"
                             , typeof(Analytics)
-                            , typeof(Push)
-                           );
+                            , typeof(Push));
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
