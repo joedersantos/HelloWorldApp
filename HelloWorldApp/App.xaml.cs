@@ -3,6 +3,9 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using HelloWorldApp.Services;
 using HelloWorldApp.Views;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Push;
 
 namespace HelloWorldApp
 {
@@ -19,6 +22,9 @@ namespace HelloWorldApp
 
         protected override void OnStart()
         {
+            AppCenter.Start("f3d2e951-3692-4703-94b8-91ba96a0e461"
+                           , typeof(Analytics)
+                           , typeof(Push));
             // Handle when your app starts
         }
 
