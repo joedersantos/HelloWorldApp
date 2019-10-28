@@ -25,6 +25,8 @@ namespace HelloWorldApp.Droid
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
 
+            Analytics.TrackEvent("Analytics funcionando passou aqui ..");
+
             Push.PushNotificationReceived += (sender, e) =>
             {
                 Toast.MakeText(this, e.Message,
